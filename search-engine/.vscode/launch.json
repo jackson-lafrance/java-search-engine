@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "request": "launch",
+
+            //Name the launch configuration
+            "name": "Launch BasicGUITemplate",
+
+            //Update to name of the main class you want to run
+            "mainClass": "BasicGUITemplate",
+
+            //Update /path/to/javafx below to be the correct
+            //path for your JavaFX installation
+            "vmArgs": "--module-path /Users/jacksonlafrance/javafx-sdk-25.0.1/lib --add-modules javafx.controls,javafx.fxml",
+        }
+    ]
+}
