@@ -1,0 +1,120 @@
+---
+alwaysApply: true
+---
+
+Project Background
+In 1405Z, you implemented a web crawler and search engine in Python. One of the
+main goals for the 1406 project is to re-implement this functionality in Java using object-
+oriented programing. The class design and overall implementation details for the 1406
+project will be your responsibility. While the focus of the 1405 project was on optimizing
+the computational complexity of your search, the focus of the 1406 problem will be on
+creating a solid OOP design and implementation. Along with the crawl and search
+functionality from the 1405 project, your 1406 project must also include:
+1. A GUI application that allows the user to perform searches and see search
+results. This must be implemented using the MVC paradigm covered in the
+course. The overall design of the view is flexible. It does not have to look fancy,
+but it should be organized well and easy to use. The view component of the GUI
+application must include at least:
+a. A text field for entering a search query
+b. A button to execute a search (alternatively, you can automatically update
+the search results when the text in the search field or the PageRank boost
+option is changed).
+c. A way for the user to indicate whether PageRank boost should be used or
+not (e.g., a radio button element).
+d. A list of the top 10 search results for the current query, sorted by their
+overall search score (from highest to lowest). Each search result must
+show the name of the page and the current search score for that page.
+2. A class that implements the ProjectTester interface included on the project’s
+Brightspace page. This class must be named ProjectTesterImp. This class will
+allow automated tests to be run on your project. Note that this class must support
+the required methods but will almost certainly create instances of your other
+classes (e.g., a crawler, a search engine, etc.) to perform the computations and
+return the results. In a way, you can look at this class as providing a connection
+between your classes and the automated testing. Each method defined in this
+interface includes a comment describing how that method should work. This is
+especially important for the search method, which differs slightly from the 1405
+requirements.
+3. A project report PDF that includes the following:
+COMP 1406Z – Fall 2025 – Course Project Due Friday, December 5th at 11:59pm
+2
+a. Instructions for running your GUI (i.e., which class is the controller).
+b. A list of functionality you have completed successfully and a list of the
+functionality that does not work.
+c. An outline of each of your classes/interfaces/etc. that explains the main
+responsibility of each file in your project.
+d. Discussion about the overall design of your system. You should discuss
+how you have applied the OOP principles in your project and how this has
+improved the overall quality of your implementation (think about
+modularity, extensibility, etc.). You should also include a description of
+how you have saved your data in files. You do not have to provide formal
+runtime complexity analysis but can discuss what steps you took to
+improve the efficiency of your application. Within the report, don’t solely
+describe how you did something. You should also focus on explaining why
+you did it this way. Include arguments to support your decisions (e.g., why
+is this a good approach? what are its advantages? why is it better than
+alternatives? etc.).
+Constraints and Assumptions
+1. You will submit only the .java files required for your project. You are free to
+develop the project in whatever IDE or editor you choose. You should not use
+any build tools, etc., for the project.
+2. You must not modify any of the provided classes or interfaces.
+3. The crawler must save all required information to files. It should be possible to
+run a crawl, stop the program, and run several searches later without re-running
+the crawler.
+4. All files must be saved within the project using relative paths. You must also use
+the OS-agnostic file separator to ensure your code works when moved to another
+computer.
+5. You may use any built-in Java/JavaFX functionality. You may not use any other
+external libraries.
+6. (The remainder of the assumptions and constraints are the same as those
+provided in the 1405 project specification) You may assume the HTML is
+well-formatted (e.g., each <a> or <p> tag has a matching closing </a> or </p>
+tag).
+7. You may assume that there will be no additional HTML inside of the <a>...</a>
+or <p>...</p> tags.
+8. There may be an arbitrary amount of <p> tags and links included in the page and
+they may be in any particular order within the page.
+9. You may assume that all links include an “href” property and the link location is
+contained inside quotation marks after href= inside of the link definition.
+COMP 1406Z – Fall 2025 – Course Project Due Friday, December 5th at 11:59pm
+3
+10. You may assume that the title for a page will be the text in between the <title>
+and </title> tags within the page. You may not assume the title matches the
+last part of the URL for the page or that the titles are unique.
+11. Each URL will contain either an absolute or a relative URL. All absolute URLs will
+start with "https://". Links that do not start with "https://" will be relative links and
+you will have to compute the full URL using a combination of the link address and
+the current page URL. You may assume that all relative links will start with "./".
+You may not assume that all pages share the same base URL (e.g.,
+https://people.scs.carleton.ca/~avamckenney/tinyfruits/) and will have to
+programmatically build the URL using the current page’s URL and the relative
+link.
+12. You may assume that all words within a page will be contained between a <p>
+start tag and </p> end tag. Words may be separated by spaces or new-line
+characters (i.e., "\n"). You should not consider link text or titles as part of the
+words on the page.
+13. Pages may have any simple String name.
+Test Files
+Test files like those provided for the 1405 project are included in the test-resources.zip
+file. These test files will interact with your class that implements the ProjectTester
+interface. There will be six different datasets that you can test your implementation on
+(tinyfruits, fruits25, fruits50, fruits100, fruitsA, and tinyfruitsA). If you want to test your
+program manually, you can start your crawl at the following links to crawl the pages
+associated with each dataset:
+1. https://people.scs.carleton.ca/~avamckenney/tinyfruits/N-0.html
+2. https://people.scs.carleton.ca/~avamckenney/fruits25/N-0.html
+3. https://people.scs.carleton.ca/~avamckenney/fruits50/N-0.html
+4. https://people.scs.carleton.ca/~avamckenney/fruits100/N-0.html
+5. https://people.scs.carleton.ca/~avamckenney/fruitsA/N-0.html
+6. https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-0.html
+The tiny datasets contain only 10 interlinked web pages and are good starting points to
+test your crawler/search functionality.
+Submission
+Submit a single .zip file named “project.zip” to Brightspace. This zip file should contain
+all of your .java files for the project and your analysis report in PDF format. Download
+your submission afterward and check the contents to ensure everything uploaded as
+expected. You should verify that your project still works correctly after being extracted
+COMP 1406Z – Fall 2025 – Course Project Due Friday, December 5th at 11:59pm
+4
+from the zip file. Consider running the tests again on the downloaded zip to ensure you
+get the expected resultss
