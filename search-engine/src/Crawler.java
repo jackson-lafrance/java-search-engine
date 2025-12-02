@@ -9,7 +9,6 @@ import java.util.*;
  */
 public class Crawler {
 
-    private final WebFetcher webFetcher;
     private final HtmlParser htmlParser;
     private final PageRankCalculator pageRankCalculator;
     private final TfIdfCalculator tfIdfCalculator;
@@ -22,7 +21,6 @@ public class Crawler {
 
     public Crawler(String resultsDirectory) {
         this.resultsDirectory = resultsDirectory;
-        this.webFetcher = new WebFetcher();
         this.htmlParser = new HtmlParser();
         this.pageRankCalculator = new PageRankCalculator();
         this.tfIdfCalculator = new TfIdfCalculator();
@@ -72,7 +70,7 @@ public class Crawler {
             visited.add(url);
 
             try {
-                String content = webFetcher.fetchUrl(url);
+                String content = WebRequester.readURL(url);
                 savePageContent(content, fileCounter++);
 
                 titles.put(url, htmlParser.extractTitle(content));
@@ -91,7 +89,7 @@ public class Crawler {
                         toVisitSet.add(link);
                     }
                 }
-            } catch (IOException | InterruptedException e) {
+            } catch (IOException e) {
                 System.err.println("Error crawling " + url + ": " + e.getMessage());
             }
         }

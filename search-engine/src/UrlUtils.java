@@ -1,7 +1,6 @@
 
 public class UrlUtils {
 
-// joins a base URL with a relative URL to create an absolute URL
     public static String joinUrl(String baseUrl, String relativeUrl) {
         if (relativeUrl.startsWith("http://") || relativeUrl.startsWith("https://")) {
             return relativeUrl;
