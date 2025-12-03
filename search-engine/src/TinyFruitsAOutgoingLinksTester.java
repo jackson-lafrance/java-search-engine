@@ -1,0 +1,174 @@
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.util.*;
+public class TinyFruitsAOutgoingLinksTester {public static void main(String[] args) throws Exception{
+ProjectTester tester = new ProjectTesterImp(); //Instantiate your own ProjectTester instance here
+tester.initialize();
+tester.crawl("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-0.html");
+runTest(tester);}public static void runTest(ProjectTester tester) throws Exception{
+PrintWriter failOut = new PrintWriter(new FileWriter("TinyFruitsA-OutgoingLinks-failed.txt"));
+PrintWriter passOut = new PrintWriter(new FileWriter("TinyFruitsA-OutgoingLinks-passed.txt"));
+List<String> expectedResult;
+List<String> yourResult;
+//Test #1 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-4.html
+expectedResult = new ArrayList<String>();
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-3.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-1.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-1.html");
+yourResult = tester.getOutgoingLinks("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-4.html");
+if(TestingTools.checkListsEqual(yourResult, expectedResult)){
+passOut.println("Passed Test #1 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-4.html");
+passOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+passOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}else{failOut.println("Failed Test #1 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-4.html");
+failOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+failOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}
+
+//Test #2 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-3.html
+expectedResult = new ArrayList<String>();
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-1.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-2.html");
+yourResult = tester.getOutgoingLinks("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-3.html");
+if(TestingTools.checkListsEqual(yourResult, expectedResult)){
+passOut.println("Passed Test #2 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-3.html");
+passOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+passOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}else{failOut.println("Failed Test #2 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-3.html");
+failOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+failOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}
+
+//Test #3 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-4.html
+expectedResult = new ArrayList<String>();
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-1.html");
+yourResult = tester.getOutgoingLinks("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-4.html");
+if(TestingTools.checkListsEqual(yourResult, expectedResult)){
+passOut.println("Passed Test #3 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-4.html");
+passOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+passOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}else{failOut.println("Failed Test #3 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-4.html");
+failOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+failOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}
+
+//Test #4 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-3.html
+expectedResult = new ArrayList<String>();
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-4.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-2.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-2.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-0.html");
+yourResult = tester.getOutgoingLinks("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-3.html");
+if(TestingTools.checkListsEqual(yourResult, expectedResult)){
+passOut.println("Passed Test #4 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-3.html");
+passOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+passOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}else{failOut.println("Failed Test #4 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-3.html");
+failOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+failOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}
+
+//Test #5 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-2.html
+expectedResult = new ArrayList<String>();
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-1.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-3.html");
+yourResult = tester.getOutgoingLinks("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-2.html");
+if(TestingTools.checkListsEqual(yourResult, expectedResult)){
+passOut.println("Passed Test #5 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-2.html");
+passOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+passOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}else{failOut.println("Failed Test #5 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-2.html");
+failOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+failOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}
+
+//Test #6 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-1.html
+expectedResult = new ArrayList<String>();
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-4.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-0.html");
+yourResult = tester.getOutgoingLinks("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-1.html");
+if(TestingTools.checkListsEqual(yourResult, expectedResult)){
+passOut.println("Passed Test #6 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-1.html");
+passOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+passOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}else{failOut.println("Failed Test #6 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-1.html");
+failOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+failOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}
+
+//Test #7 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-1.html
+expectedResult = new ArrayList<String>();
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-3.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-3.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-4.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-2.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-0.html");
+yourResult = tester.getOutgoingLinks("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-1.html");
+if(TestingTools.checkListsEqual(yourResult, expectedResult)){
+passOut.println("Passed Test #7 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-1.html");
+passOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+passOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}else{failOut.println("Failed Test #7 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-1.html");
+failOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+failOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}
+
+//Test #8 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-0.html
+expectedResult = new ArrayList<String>();
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-2.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-3.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-1.html");
+yourResult = tester.getOutgoingLinks("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-0.html");
+if(TestingTools.checkListsEqual(yourResult, expectedResult)){
+passOut.println("Passed Test #8 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-0.html");
+passOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+passOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}else{failOut.println("Failed Test #8 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-0.html");
+failOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+failOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}
+
+//Test #9 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-0.html
+expectedResult = new ArrayList<String>();
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-2.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-1.html");
+yourResult = tester.getOutgoingLinks("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-0.html");
+if(TestingTools.checkListsEqual(yourResult, expectedResult)){
+passOut.println("Passed Test #9 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-0.html");
+passOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+passOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}else{failOut.println("Failed Test #9 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-0.html");
+failOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+failOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}
+
+//Test #10 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-2.html
+expectedResult = new ArrayList<String>();
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsB/N-4.html");
+expectedResult.add("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-3.html");
+yourResult = tester.getOutgoingLinks("https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-2.html");
+if(TestingTools.checkListsEqual(yourResult, expectedResult)){
+passOut.println("Passed Test #10 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-2.html");
+passOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+passOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}else{failOut.println("Failed Test #10 checking outgoing links for https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-2.html");
+failOut.println("expected = " + Arrays.toString(expectedResult.toArray(new String[expectedResult.size()])));
+failOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}
+
+//Test #11 checking outgoing links for http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+expectedResult = new ArrayList<String>();
+yourResult = tester.getOutgoingLinks("http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html");
+if(yourResult == null){
+passOut.println("Passed Test #11 checking outgoing links for http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html");
+passOut.println("expected = " + null);
+passOut.println("result = null\n\n");
+}else{failOut.println("Failed Test #11 checking outgoing links for http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html");
+failOut.println("expected = " + null);
+failOut.println("result = " + Arrays.toString(yourResult.toArray(new String[yourResult.size()])) + "\n\n");
+}
+
+failOut.close();
+passOut.close();
+}
+}

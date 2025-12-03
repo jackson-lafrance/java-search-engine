@@ -38,11 +38,7 @@ public class TfIdfCalculator {
             Map<String, Double> urlDict = entry.getValue();
             int numDocsWithWord = urlDict.size();
 
-            if (numDocsWithWord == totalDocuments) {
-                idf.put(word, 0.0);
-            } else {
-                idf.put(word, Math.log(totalDocuments / (double) (numDocsWithWord + 1)) / Math.log(2));
-            }
+            idf.put(word, Math.log(totalDocuments / (double) (numDocsWithWord + 1)) / Math.log(2));
         }
 
         return idf;

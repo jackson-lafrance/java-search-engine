@@ -71,7 +71,7 @@ public class SearchData {
     public double getPageRank(String url) {
         loadData();
         Double rank = pageRanks.get(url);
-        return (rank == null || rank == 0.0) ? -1.0 : rank;
+        return rank == null ? -1.0 : rank;
     }
 
 // returns the idf for the word you input

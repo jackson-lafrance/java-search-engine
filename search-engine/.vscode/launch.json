@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Fruits25AllTester",
+            "request": "launch",
+            "mainClass": "Fruits25AllTester",
+            "projectName": "search-engine_125eb376"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",

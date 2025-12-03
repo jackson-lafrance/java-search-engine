@@ -11,6 +11,11 @@ public class SearchEngine {
 
 // performs a search using the query you input
     public List<SearchResult> search(String query, boolean boost) {
+        return search(query, boost, 10);
+    }
+
+// performs a search using the query you input, returns top X results
+    public List<SearchResult> search(String query, boolean boost, int X) {
 // parses the query into words (only alphabetic characters)
         List<String> words = parseQuery(query);
         if (words.isEmpty()) {
@@ -106,8 +111,8 @@ public class SearchEngine {
             return Double.compare(score2, score1);
         });
 
-// returns the top 10 results
-        int numResults = Math.min(10, results.size());
+// returns the top X results
+        int numResults = Math.min(X, results.size());
         if (numResults == 0) {
             return new ArrayList<>();
         }
