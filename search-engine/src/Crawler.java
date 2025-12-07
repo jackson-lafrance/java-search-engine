@@ -3,10 +3,6 @@ import java.io.*;
 import java.nio.file.*;
 import java.util.*;
 
-/**
- * Main crawler class that orchestrates web crawling, indexing, and data
- * persistence.
- */
 public class Crawler {
 
     private final HtmlParser htmlParser;
@@ -32,7 +28,8 @@ public class Crawler {
         dataSerializer.clearDirectory();
 
         CrawlData crawlData = performCrawl(seed);
-        Map<String, Double> pageRanks = pageRankCalculator.computePageRank(crawlData.getLinkGraph());
+        Map<String, List<String>> filteredLinkGraph = filterLinkGraph(crawlData.getLinkGraph(), crawlData.getVisited());
+        Map<String, Double> pageRanks = pageRankCalculator.computePageRank(filteredLinkGraph);
 
         TfIdfData tfIdfData = calculateTfIdf(crawlData.getWordLists());
 
@@ -43,8 +40,8 @@ public class Crawler {
 
 // performs the actual web crawling using bfs
     private CrawlData performCrawl(String seed) {
-        Set<String> visited = new HashSet<>();
-        Map<String, List<String>> linkGraph = new HashMap<>();
+        Set<String> visited = new LinkedHashSet<>(); // Preserve insertion order (like Python)
+        Map<String, List<String>> linkGraph = new LinkedHashMap<>(); // Preserve insertion order (like Python dict)
         Map<String, List<String>> incomingLinks = new HashMap<>();
         Map<String, List<String>> wordLists = new HashMap<>();
         Map<String, String> titles = new HashMap<>();
@@ -95,6 +92,22 @@ public class Crawler {
         }
 
         return new CrawlData(visited, linkGraph, incomingLinks, wordLists, titles);
+    }
+
+// filters link graph to only include links to visited pages (like Python does)
+    private Map<String, List<String>> filterLinkGraph(Map<String, List<String>> linkGraph, Set<String> visited) {
+        Map<String, List<String>> filtered = new LinkedHashMap<>();
+        for (String page : linkGraph.keySet()) {
+            List<String> links = linkGraph.get(page);
+            List<String> validLinks = new ArrayList<>();
+            for (String link : links) {
+                if (visited.contains(link)) {
+                    validLinks.add(link);
+                }
+            }
+            filtered.put(page, validLinks);
+        }
+        return filtered;
     }
 
 // saves the html content of a page to a file

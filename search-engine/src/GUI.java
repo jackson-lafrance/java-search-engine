@@ -71,9 +71,7 @@ public class GUI extends Pane {
                 noBoostButton, boostButton, resultsLabel, resultsList);
     }
 
-    /**
-     * Performs a search and updates the results list.
-     */
+// performs a search and updates the results list
     private void performSearch() {
         String query = searchField.getText().trim();
         if (query.isEmpty()) {
@@ -82,7 +80,7 @@ public class GUI extends Pane {
         }
 
         boolean boost = boostButton.isSelected();
-        List<SearchResult> results = searchEngine.search(query, boost);
+        List<SearchResult> results = searchEngine.search(query, boost, 10);
 
         ObservableList<String> resultStrings = FXCollections.observableArrayList();
         for (SearchResult result : results) {

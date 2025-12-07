@@ -38,7 +38,9 @@ public class TfIdfCalculator {
             Map<String, Double> urlDict = entry.getValue();
             int numDocsWithWord = urlDict.size();
 
-            idf.put(word, Math.log(totalDocuments / (double) (numDocsWithWord + 1)) / Math.log(2));
+            double idfValue = Math.log(totalDocuments / (double) (numDocsWithWord + 1)) / Math.log(2);
+            // cap IDF at 0 (negative values become 0)
+            idf.put(word, Math.max(0.0, idfValue));
         }
 
         return idf;

@@ -3,6 +3,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Fruits50AllTester",
+            "request": "launch",
+            "mainClass": "Fruits50AllTester",
+            "projectName": "search-engine_125eb376"
+        },
+        {
+            "type": "java",
+            "name": "TinyFruitsAAllTester",
+            "request": "launch",
+            "mainClass": "TinyFruitsAAllTester",
+            "projectName": "search-engine_125eb376"
+        },
+        {
+            "type": "java",
+            "name": "Fruits50SearchBoostTester",
+            "request": "launch",
+            "mainClass": "Fruits50SearchBoostTester",
+            "projectName": "search-engine_125eb376"
+        },
+        {
+            "type": "java",
+            "name": "TinyFruitsASearchBoostTester",
+            "request": "launch",
+            "mainClass": "TinyFruitsASearchBoostTester",
+            "projectName": "search-engine_125eb376"
+        },
+        {
+            "type": "java",
+            "name": "FruitsASearchBoostTester",
+            "request": "launch",
+            "mainClass": "FruitsASearchBoostTester",
+            "projectName": "search-engine_125eb376"
+        },
+        {
+            "type": "java",
+            "name": "Fruits100SearchBoostTester",
+            "request": "launch",
+            "mainClass": "Fruits100SearchBoostTester",
+            "projectName": "search-engine_125eb376"
+        },
+        {
+            "type": "java",
+            "name": "Fruits100AllTester",
+            "request": "launch",
+            "mainClass": "Fruits100AllTester",
+            "projectName": "search-engine_125eb376"
+        },
+        {
+            "type": "java",
+            "name": "TinyFruitsAllTester",
+            "request": "launch",
+            "mainClass": "TinyFruitsAllTester",
+            "projectName": "search-engine_125eb376"
+        },
+        {
+            "type": "java",
+            "name": "FruitsAAllTester",
+            "request": "launch",
+            "mainClass": "FruitsAAllTester",
+            "projectName": "search-engine_125eb376"
+        },
+        {
+            "type": "java",
             "name": "Fruits25AllTester",
             "request": "launch",
             "mainClass": "Fruits25AllTester",

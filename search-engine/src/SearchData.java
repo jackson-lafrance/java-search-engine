@@ -6,7 +6,7 @@ public class SearchData {
 
     private final DataSerializer dataSerializer;
 
-    // cached data loaded from serialized files
+// cached data loaded from serialized files
     private Map<String, List<String>> linkGraph;
     private Map<String, List<String>> incomingLinks;
     private Map<String, Double> pageRanks;
@@ -19,9 +19,9 @@ public class SearchData {
 
     public SearchData(String resultsDirectory) {
         this.dataSerializer = new DataSerializer(resultsDirectory);
-        this.linkGraph = new HashMap<>();
+        this.linkGraph = new LinkedHashMap<>();
         this.incomingLinks = new HashMap<>();
-        this.pageRanks = new HashMap<>();
+        this.pageRanks = new LinkedHashMap<>();
         this.idf = new HashMap<>();
         this.tf = new HashMap<>();
         this.tfidf = new HashMap<>();
@@ -36,9 +36,11 @@ public class SearchData {
         }
 
         try {
-            this.linkGraph = dataSerializer.readObject("links.ser");
+            Map<String, List<String>> loadedLinkGraph = dataSerializer.readObject("links.ser");
+            this.linkGraph = (loadedLinkGraph instanceof LinkedHashMap) ? loadedLinkGraph : new LinkedHashMap<>(loadedLinkGraph);
             this.incomingLinks = dataSerializer.readObject("linksi.ser");
-            this.pageRanks = dataSerializer.readObject("pageRank.ser");
+            Map<String, Double> loadedPageRanks = dataSerializer.readObject("pageRank.ser");
+            this.pageRanks = (loadedPageRanks instanceof LinkedHashMap) ? loadedPageRanks : new LinkedHashMap<>(loadedPageRanks);
             this.idf = dataSerializer.readObject("idf.ser");
             this.tf = dataSerializer.readObject("tf.ser");
             this.tfidf = dataSerializer.readObject("tfidf.ser");
@@ -127,7 +129,7 @@ public class SearchData {
 // returns all page rank values
     public Map<String, Double> getAllPageRanks() {
         loadData();
-        return new HashMap<>(pageRanks);
+        return new LinkedHashMap<>(pageRanks);
     }
 
 // returns all titles

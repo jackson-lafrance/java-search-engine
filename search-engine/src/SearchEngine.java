@@ -10,13 +10,7 @@ public class SearchEngine {
     }
 
 // performs a search using the query you input
-    public List<SearchResult> search(String query, boolean boost) {
-        return search(query, boost, 10);
-    }
-
-// performs a search using the query you input, returns top X results
     public List<SearchResult> search(String query, boolean boost, int X) {
-// parses the query into words (only alphabetic characters)
         List<String> words = parseQuery(query);
         if (words.isEmpty()) {
             return new ArrayList<>();
@@ -32,7 +26,7 @@ public class SearchEngine {
         Map<String, Double> allIdf = searchData.getAllIDF();
         Map<String, String> urlToTitle = searchData.getAllTitles();
         Map<String, Map<String, Double>> allTfidf = searchData.getAllTFIDF();
-        Map<String, Double> allPageRanks = boost ? searchData.getAllPageRanks() : null;
+        Map<String, Double> allPageRanks = boost ? searchData.getAllPageRanks() : new HashMap<>();
 
 // calculates the query tf
         Map<String, Double> queryTf = new HashMap<>();
@@ -61,8 +55,17 @@ public class SearchEngine {
         }
         double queryMagnitude = Math.sqrt(queryMagnitudeSquared);
 
+        // if query magnitude is 0 (all words have IDF=0), all scores will be 0
+        // return results sorted lexicographically by title
         if (queryMagnitude == 0.0) {
-            return new ArrayList<>();
+            List<SearchResult> zeroScoreResults = new ArrayList<>();
+            for (String url : allUrls) {
+                String title = urlToTitle.getOrDefault(url, "");
+                zeroScoreResults.add(new SearchResult(title, 0.0));
+            }
+            zeroScoreResults.sort((r1, r2) -> r1.getTitle().compareTo(r2.getTitle()));
+            int numResults = Math.min(X, zeroScoreResults.size());
+            return numResults > 0 ? new ArrayList<>(zeroScoreResults.subList(0, numResults)) : new ArrayList<>();
         }
 
 // calculates the scores for each url
@@ -90,25 +93,27 @@ public class SearchEngine {
 
 // calculates the final score
             double score = cosineSimilarity;
-            if (boost && allPageRanks != null) {
+            if (boost) {
                 double pageRank = allPageRanks.getOrDefault(url, 1.0);
                 score = cosineSimilarity * pageRank;
             }
 
             String title = urlToTitle.getOrDefault(url, "");
-            results.add(new SearchResultImpl(title, score));
+            results.add(new SearchResult(title, score));
         }
 
 // sorts the results by score then by title
         results.sort((r1, r2) -> {
-            double score1 = Math.round(r1.getScore() * 1000.0) / 1000.0;
-            double score2 = Math.round(r2.getScore() * 1000.0) / 1000.0;
+            double roundedScore1 = Math.round(r1.getScore() * 1000.0) / 1000.0;
+            double roundedScore2 = Math.round(r2.getScore() * 1000.0) / 1000.0;
 
-            if (Math.abs(score1 - score2) < 0.0001) {
-// scores are equal so use lexicgraphical ordering
+            int roundedComparison = Double.compare(roundedScore2, roundedScore1);
+
+            if (roundedComparison == 0) {
                 return r1.getTitle().compareTo(r2.getTitle());
             }
-            return Double.compare(score2, score1);
+
+            return roundedComparison;
         });
 
 // returns the top X results
@@ -119,7 +124,7 @@ public class SearchEngine {
         return new ArrayList<>(results.subList(0, numResults));
     }
 
-// parses the query into a list of words (only alphabetic characters)
+// parses the query into a list of words
     private List<String> parseQuery(String query) {
         List<String> words = new ArrayList<>();
         String queryLower = query.toLowerCase();

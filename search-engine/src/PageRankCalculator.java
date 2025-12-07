@@ -21,12 +21,42 @@ public class PageRankCalculator {
             ranks = newRanks;
         }
 
-        return ranks;
+        Map<String, Double> result = new LinkedHashMap<>();
+        for (String page : pages) {
+            result.put(page, ranks.get(page));
+        }
+        return result;
+    }
+
+// computes page rank using visited set
+    public Map<String, Double> computePageRank(Map<String, List<String>> linkGraph, Set<String> visited) {
+        List<String> pages = new ArrayList<>(linkGraph.keySet());
+        int numPages = pages.size();
+
+        if (numPages == 0) {
+            return new HashMap<>();
+        }
+
+        Map<String, Double> ranks = initializeRanks(pages, numPages);
+        double euclideanDistance = 1.0;
+
+        while (euclideanDistance >= 0.0001) {
+            Map<String, Double> newRanks = computeNewRanks(pages, linkGraph, ranks, numPages);
+            euclideanDistance = calculateEuclideanDistance(ranks, newRanks, pages);
+            ranks = newRanks;
+        }
+
+// returns ranks in pages order
+        Map<String, Double> result = new LinkedHashMap<>();
+        for (String page : pages) {
+            result.put(page, ranks.get(page));
+        }
+        return result;
     }
 
 // initializes the ranks
     private Map<String, Double> initializeRanks(List<String> pages, int numPages) {
-        Map<String, Double> ranks = new HashMap<>();
+        Map<String, Double> ranks = new LinkedHashMap<>();
         for (String page : pages) {
             ranks.put(page, 1.0 / numPages);
         }
@@ -38,29 +68,38 @@ public class PageRankCalculator {
             Map<String, List<String>> linkGraph,
             Map<String, Double> ranks,
             int numPages) {
-        Map<String, Double> newRanks = new HashMap<>();
+        Map<String, Double> newRanks = new LinkedHashMap<>();
+        Set<String> pagesSet = new HashSet<>(pages);
 
 // initializes with damping factor
+        double dampingValue = (1.0 - 0.9) / numPages;
         for (String page : pages) {
-            newRanks.put(page, (1 - 0.9) / numPages);
+            newRanks.put(page, dampingValue);
         }
 
 // distributes page rank
         for (String page : pages) {
             List<String> outLinks = linkGraph.getOrDefault(page, new ArrayList<>());
-            int numOutLinks = outLinks.size();
 
-            if (numOutLinks > 0) {
-                double contribution = 0.9 * ranks.get(page) / numOutLinks;
+            int numValidLinks = 0;
+            for (String link : outLinks) {
+                if (pagesSet.contains(link)) {
+                    numValidLinks++;
+                }
+            }
+
+            if (numValidLinks > 0) {
+                double contribution = 0.9 * ranks.get(page) / numValidLinks;
                 for (String link : outLinks) {
-                    if (newRanks.containsKey(link)) {
+                    if (pagesSet.contains(link)) {
                         newRanks.put(link, newRanks.get(link) + contribution);
                     }
                 }
             } else {
-// distributes page rank evenly when there are no outgoing links
+                List<String> sortedPages = new ArrayList<>(pages);
+                Collections.sort(sortedPages);
                 double contribution = 0.9 * ranks.get(page) / numPages;
-                for (String p : pages) {
+                for (String p : sortedPages) {
                     newRanks.put(p, newRanks.get(p) + contribution);
                 }
             }

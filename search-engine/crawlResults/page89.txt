@@ -1,0 +1,73 @@
+<html><head><title>N-22</title></head><body>
+<a class="link-class-5" target="_blank" title="Go to page N-39" style="color:red" id="link-39" href="https://people.scs.carleton.ca/~avamckenney/fruitsB/N-39.html">39</a>
+<a target="_blank" id="link-7" title="Go to page N-7" style="color:red" class="link-class-5" href="https://people.scs.carleton.ca/~avamckenney/fruitsB/N-7.html">7</a>
+<a href="./N-11.html" class="link-class-2" target="_blank" style="color:red" title="Go to page N-11" id="link-11">11</a>
+<a href="./N-40.html" style="color:red" title="Go to page N-40" target="_blank" id="link-40" class="link-class-1">40</a>
+<a class="link-class-2" title="Go to page N-23" id="link-23" href="./N-23.html" target="_blank" style="color:red">23</a>
+<a class="link-class-1" href="./N-2.html" id="link-2" title="Go to page N-2" target="_blank" style="color:red">2</a>
+<a target="_blank" title="Go to page N-32" id="link-32" href="./N-32.html" style="color:red" class="link-class-4">32</a>
+<a style="color:red" title="Go to page N-9" target="_blank" id="link-9" href="./N-9.html" class="link-class-4">9</a>
+<p>
+blueberry
+pear
+pear
+coconut
+cherry
+peach
+strawberry
+apricot
+papaya
+peach
+banana
+banana
+</p>
+<p>
+peach
+apple
+cherry
+papaya
+kiwi
+pear
+pear
+papaya
+strawberry
+blueberry
+pear
+kiwi
+blueberry
+</p>
+<a href="./N-33.html" title="Go to page N-33" target="_blank" class="link-class-2" style="color:red" id="link-33">33</a>
+<a style="color:red" target="_blank" title="Go to page N-43" class="link-class-2" href="./N-43.html" id="link-43">43</a>
+<a href="https://people.scs.carleton.ca/~avamckenney/fruitsA/N-12.html">papaya_pear_cherry_coconut</a>
+<a class="link-class-1" id="link-44" title="Go to page N-44" target="_blank" href="./N-44.html" style="color:red">44</a>
+<a target="_blank" id="link-15" style="color:red" href="./N-15.html" class="link-class-4" title="Go to page N-15">15</a>
+<a target="_blank" title="Go to page N-49" class="link-class-5" style="color:red" id="link-49" href="https://people.scs.carleton.ca/~avamckenney/fruitsB/N-49.html">49</a>
+<a id="link-5" href="./N-5.html" style="color:red" title="Go to page N-5" class="link-class-2" target="_blank">5</a>
+<a target="_blank" class="link-class-4" href="./N-45.html" style="color:red" title="Go to page N-45" id="link-45">45</a>
+<a class="link-class-5" title="Go to page N-8" style="color:red" href="https://people.scs.carleton.ca/~avamckenney/fruitsB/N-8.html" target="_blank" id="link-8">8</a>
+<p>
+pear
+blueberry
+strawberry
+coconut
+peach
+banana
+kiwi
+banana
+banana
+cherry
+kiwi
+apricot
+strawberry
+peach
+lime
+peach
+banana
+pear
+apple
+pear
+peach
+</p>
+<a id="link-14" title="Go to page N-14" href="./N-14.html" class="link-class-2" style="color:red" target="_blank">14</a>
+<a id="link-4" class="link-class-4" href="./N-4.html" style="color:red" target="_blank" title="Go to page N-4">4</a>
+</body></html>
