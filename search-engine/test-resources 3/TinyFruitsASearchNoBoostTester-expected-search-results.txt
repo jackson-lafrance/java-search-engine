@@ -1,0 +1,2200 @@
+tomato pear
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+Custom Title 89
+0.0
+N-1
+0.0
+lime papaya papaya
+10
+Custom Title 20
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 38
+0.0
+N-4
+0.0
+peach
+10
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 20
+0.0
+N-3
+0.0
+N-4
+0.0
+lime peach peach
+10
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 20
+0.0
+N-3
+0.0
+N-4
+0.0
+fig apricot
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-3
+0.0
+banana cherry
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+Custom Title 89
+0.0
+N-1
+0.0
+banana tomato lime pear
+10
+Custom Title 20
+1.0000000000000002
+N-4
+1.0000000000000002
+N-1
+0.9909878651961873
+Custom Title 38
+0.9815962525091808
+N-3
+0.8988175985382486
+N-3
+0.8658647875053789
+N-4
+0.8632215731379168
+N-0
+0.8515377974425193
+Custom Title 89
+0.0
+N-1
+0.0
+apricot
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-3
+0.0
+apricot
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-3
+0.0
+lime tomato peach fig coconut
+10
+Custom Title 89
+1.0
+N-4
+1.0
+Custom Title 38
+0.9527911395605382
+N-0
+0.9512235130317156
+Custom Title 20
+0.7071067811865476
+N-1
+0.7071067811865476
+N-1
+0.7071067811865476
+N-3
+0.7071067811865476
+N-3
+0.7071067811865476
+N-4
+0.7071067811865476
+papaya papaya lime
+10
+Custom Title 20
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 38
+0.0
+N-4
+0.0
+banana apple apple fig
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+Custom Title 89
+0.0
+N-1
+0.0
+coconut lime banana peach
+10
+N-4
+0.9881339070716826
+Custom Title 89
+0.9485302216937918
+N-0
+0.9486257852737253
+Custom Title 38
+0.9400465622249153
+Custom Title 20
+0.7417177423162824
+N-4
+0.7382508794674643
+N-1
+0.7326137720014867
+N-3
+0.7313325252124772
+N-1
+0.6707121519200594
+N-3
+0.6062247470196019
+fig banana
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+Custom Title 89
+0.0
+N-1
+0.0
+pear fig apple pear lime
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+Custom Title 89
+0.0
+N-1
+0.0
+pear kiwi kiwi peach
+10
+N-1
+0.9971972573299291
+Custom Title 38
+0.9796976050516901
+N-3
+0.9789446574423528
+N-4
+0.9552517194478515
+N-0
+0.9391547585665065
+Custom Title 89
+0.9042687179431864
+N-1
+0.9042687179431864
+Custom Title 20
+0.4269637991087606
+N-3
+0.4269637991087606
+N-4
+0.4269637991087606
+pear strawberry apricot
+10
+Custom Title 20
+1.0000000000000002
+N-4
+1.0000000000000002
+Custom Title 38
+0.9724698041480282
+N-1
+0.9526619027185704
+N-4
+0.9525405513846941
+N-3
+0.9507638717822757
+N-0
+0.939658978158309
+Custom Title 89
+0.7071067811865476
+N-3
+0.7071067811865476
+N-1
+0.0
+cherry papaya coconut banana
+10
+N-0
+0.9869905454322782
+Custom Title 20
+0.9822353465295002
+N-4
+0.9659581836639426
+Custom Title 89
+0.9196795016567535
+N-4
+0.9153808277607286
+Custom Title 38
+0.9115682557823678
+N-3
+0.8432326063129657
+N-1
+0.5453313709753537
+N-3
+0.5299970005385894
+N-1
+0.3926698539898191
+apricot
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-3
+0.0
+cherry kiwi apricot blueberry tomato
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-3
+0.0
+cherry peach strawberry kiwi
+10
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 20
+0.0
+N-3
+0.0
+N-4
+0.0
+strawberry banana papaya
+10
+N-4
+1.0000000000000002
+N-3
+0.9913824033150249
+N-1
+0.9820145511359454
+N-0
+0.9814937989092084
+N-3
+0.9544009281116945
+Custom Title 20
+0.9513863801955661
+Custom Title 38
+0.7071067811865476
+Custom Title 89
+0.7071067811865476
+N-1
+0.7071067811865476
+N-4
+0.7071067811865476
+apricot
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-3
+0.0
+apricot pear papaya
+10
+Custom Title 20
+0.9640835677101839
+N-1
+0.9477200337725808
+N-0
+0.9067143824350385
+N-4
+0.8884135281929997
+N-3
+0.8234172915940846
+Custom Title 89
+0.816496580927726
+N-4
+0.816496580927726
+Custom Title 38
+0.7940182701423202
+N-3
+0.7353788165870935
+N-1
+0.5773502691896257
+pear lime peach
+10
+N-1
+0.9971972573299291
+Custom Title 38
+0.9796976050516901
+N-3
+0.9789446574423528
+N-4
+0.9552517194478515
+N-0
+0.9391547585665064
+Custom Title 89
+0.9042687179431864
+N-1
+0.9042687179431864
+Custom Title 20
+0.42696379910876053
+N-3
+0.42696379910876053
+N-4
+0.42696379910876053
+peach
+10
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 20
+0.0
+N-3
+0.0
+N-4
+0.0
+strawberry banana kiwi
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+Custom Title 89
+0.0
+N-1
+0.0
+coconut tomato
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-1
+0.0
+N-3
+0.0
+tomato lime coconut blueberry
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-1
+0.0
+N-3
+0.0
+strawberry fig coconut coconut
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-1
+0.0
+N-3
+0.0
+apricot pear
+10
+Custom Title 20
+1.0000000000000002
+N-4
+1.0000000000000002
+Custom Title 38
+0.9724698041480282
+N-1
+0.9526619027185704
+N-4
+0.9525405513846941
+N-3
+0.9507638717822757
+N-0
+0.939658978158309
+Custom Title 89
+0.7071067811865476
+N-3
+0.7071067811865476
+N-1
+0.0
+apricot fig kiwi strawberry apple
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-3
+0.0
+papaya tomato papaya
+10
+Custom Title 20
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 38
+0.0
+N-4
+0.0
+blueberry peach
+10
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 20
+0.0
+N-3
+0.0
+N-4
+0.0
+tomato coconut
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-1
+0.0
+N-3
+0.0
+kiwi blueberry apple strawberry peach
+10
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 20
+0.0
+N-3
+0.0
+N-4
+0.0
+kiwi blueberry papaya blueberry
+10
+Custom Title 20
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 38
+0.0
+N-4
+0.0
+kiwi coconut
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-1
+0.0
+N-3
+0.0
+pear strawberry
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+Custom Title 89
+0.0
+N-1
+0.0
+peach coconut apricot apple
+10
+Custom Title 89
+1.0000000000000002
+N-4
+1.0000000000000002
+Custom Title 38
+0.9576274856544376
+N-0
+0.9544741399541253
+Custom Title 20
+0.7417177423162824
+N-3
+0.7417177423162824
+N-4
+0.7382508794674643
+N-1
+0.7194430426550201
+N-1
+0.6707121519200594
+N-3
+0.6707121519200594
+banana blueberry coconut
+10
+Custom Title 20
+1.0
+N-0
+1.0000000000000002
+N-4
+0.9953259000681424
+Custom Title 38
+0.9911803559177151
+N-4
+0.9789201388862714
+Custom Title 89
+0.9042687179431864
+N-3
+0.8173253954077537
+N-1
+0.42696379910876053
+N-3
+0.42696379910876053
+N-1
+0.0
+apple fig apricot peach
+10
+Custom Title 89
+1.0
+N-0
+1.0
+N-3
+1.0000000000000002
+N-4
+1.0
+Custom Title 38
+0.9980417006245218
+N-1
+0.9699687652182872
+N-1
+0.9042687179431864
+Custom Title 20
+0.4269637991087606
+N-4
+0.4269637991087606
+N-3
+0.0
+papaya apple pear
+10
+N-1
+0.9526619027185704
+Custom Title 20
+0.9513863801955661
+N-0
+0.902218870466766
+N-3
+0.9006514341450589
+N-4
+0.8632215731379168
+N-3
+0.821342037771781
+Custom Title 38
+0.7071067811865476
+Custom Title 89
+0.7071067811865476
+N-1
+0.7071067811865476
+N-4
+0.7071067811865476
+strawberry blueberry blueberry coconut apricot
+10
+Custom Title 20
+1.0
+Custom Title 89
+1.0
+N-4
+1.0
+N-4
+0.9953259000681424
+Custom Title 38
+0.9769983133107591
+N-0
+0.953678581007338
+N-3
+0.9042687179431864
+N-1
+0.42696379910876053
+N-3
+0.42696379910876053
+N-1
+0.0
+coconut kiwi apricot
+10
+Custom Title 20
+1.0
+Custom Title 89
+1.0
+N-4
+1.0
+N-4
+0.9953259000681424
+Custom Title 38
+0.9769983133107591
+N-0
+0.953678581007338
+N-3
+0.9042687179431864
+N-1
+0.42696379910876053
+N-3
+0.42696379910876053
+N-1
+0.0
+pear blueberry tomato fig strawberry
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+Custom Title 89
+0.0
+N-1
+0.0
+pear fig blueberry coconut banana
+10
+Custom Title 20
+1.0000000000000002
+N-4
+0.992893673048705
+Custom Title 38
+0.9924176781378419
+N-4
+0.9335000260503279
+Custom Title 89
+0.831637403881781
+N-3
+0.8211360906982491
+N-0
+0.7906036829194444
+N-1
+0.5503144230625184
+N-3
+0.4991305197063049
+N-1
+0.0
+kiwi cherry tomato lime pear
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+Custom Title 89
+0.0
+N-1
+0.0
+apricot apple tomato
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-3
+0.0
+peach
+10
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 20
+0.0
+N-3
+0.0
+N-4
+0.0
+lime coconut
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-1
+0.0
+N-3
+0.0
+blueberry cherry peach
+10
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 20
+0.0
+N-3
+0.0
+N-4
+0.0
+tomato fig apricot blueberry banana
+10
+Custom Title 20
+1.0000000000000002
+N-4
+1.0000000000000002
+N-1
+0.9820145511359454
+N-3
+0.9820145511359454
+N-0
+0.9512235130317157
+N-4
+0.9506976036991436
+Custom Title 38
+0.9236763928239906
+Custom Title 89
+0.7071067811865476
+N-3
+0.7071067811865476
+N-1
+0.0
+strawberry coconut papaya
+10
+Custom Title 89
+1.0
+N-0
+0.9855323165586175
+Custom Title 20
+0.9791752675054497
+N-4
+0.9789201388862714
+Custom Title 38
+0.9042687179431864
+N-4
+0.9042687179431864
+N-3
+0.8809104058614148
+N-1
+0.42696379910876053
+N-1
+0.42696379910876053
+N-3
+0.42696379910876053
+papaya fig tomato
+10
+Custom Title 20
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 38
+0.0
+N-4
+0.0
+fig coconut coconut banana
+10
+N-4
+0.999823534028821
+Custom Title 38
+0.9985427217163919
+N-4
+0.9959365214258297
+Custom Title 20
+0.9825842384506401
+N-0
+0.9825842384506402
+Custom Title 89
+0.9678576169346279
+N-3
+0.6960272902643501
+N-1
+0.25149877403602416
+N-3
+0.25149877403602416
+N-1
+0.0
+apple banana fig
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+Custom Title 89
+0.0
+N-1
+0.0
+apricot pear
+10
+Custom Title 20
+1.0000000000000002
+N-4
+1.0000000000000002
+Custom Title 38
+0.9724698041480282
+N-1
+0.9526619027185704
+N-4
+0.9525405513846941
+N-3
+0.9507638717822757
+N-0
+0.939658978158309
+Custom Title 89
+0.7071067811865476
+N-3
+0.7071067811865476
+N-1
+0.0
+coconut fig peach apricot lime
+10
+Custom Title 89
+1.0000000000000002
+N-4
+1.0000000000000002
+Custom Title 38
+0.9576274856544377
+N-0
+0.9544741399541254
+Custom Title 20
+0.7417177423162825
+N-3
+0.7417177423162825
+N-4
+0.7382508794674644
+N-1
+0.7194430426550202
+N-1
+0.6707121519200595
+N-3
+0.6707121519200595
+apple apricot
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-3
+0.0
+cherry papaya
+10
+Custom Title 20
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 38
+0.0
+N-4
+0.0
+apricot lime cherry fig cherry
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-3
+0.0
+apricot cherry banana
+10
+Custom Title 20
+1.0000000000000002
+N-4
+1.0000000000000002
+N-1
+0.9820145511359454
+N-3
+0.9820145511359454
+N-0
+0.9512235130317157
+N-4
+0.9506976036991436
+Custom Title 38
+0.9236763928239906
+Custom Title 89
+0.7071067811865476
+N-3
+0.7071067811865476
+N-1
+0.0
+papaya strawberry peach
+10
+Custom Title 89
+1.0
+N-0
+0.9952385890608804
+N-4
+0.9789201388862714
+N-1
+0.9699687652182872
+N-1
+0.9514357327278576
+Custom Title 38
+0.9042687179431864
+N-3
+0.8844607440735748
+Custom Title 20
+0.42696379910876053
+N-3
+0.42696379910876053
+N-4
+0.0
+cherry pear pear peach
+10
+N-4
+0.9994775281917156
+N-0
+0.9965843393727348
+N-1
+0.94180140570277
+Custom Title 38
+0.8916549942301149
+N-3
+0.8899638742947102
+Custom Title 89
+0.7589533016945863
+N-1
+0.7589533016945863
+Custom Title 20
+0.6511450574540871
+N-3
+0.6511450574540871
+N-4
+0.6511450574540871
+strawberry tomato peach kiwi apple
+10
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 20
+0.0
+N-3
+0.0
+N-4
+0.0
+papaya tomato peach peach
+10
+N-4
+0.999823534028821
+N-1
+0.9982723664503605
+N-0
+0.9960171631105524
+N-1
+0.992069255460258
+Custom Title 89
+0.9825842384506401
+Custom Title 38
+0.9678576169346279
+N-3
+0.7823519375755534
+Custom Title 20
+0.25149877403602416
+N-3
+0.25149877403602416
+N-4
+0.0
+kiwi coconut tomato blueberry lime
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-1
+0.0
+N-3
+0.0
+lime coconut banana cherry pear
+10
+Custom Title 20
+1.0000000000000002
+N-4
+0.992893673048705
+Custom Title 38
+0.9924176781378419
+N-4
+0.9335000260503279
+Custom Title 89
+0.831637403881781
+N-3
+0.8211360906982491
+N-0
+0.7906036829194444
+N-1
+0.5503144230625184
+N-3
+0.4991305197063049
+N-1
+0.0
+apricot pear banana
+10
+Custom Title 20
+1.0
+N-4
+1.0
+N-1
+0.9677861618392297
+Custom Title 38
+0.9408084955443408
+N-3
+0.9293861323847529
+N-4
+0.8884135281929997
+N-0
+0.8716672162375957
+N-3
+0.7069756385438538
+Custom Title 89
+0.5773502691896257
+N-1
+0.0
+papaya papaya apricot
+10
+N-3
+0.9852283528897428
+Custom Title 89
+0.9631012493665345
+N-1
+0.9631012493665345
+N-0
+0.9172880861780802
+N-1
+0.8713256756554348
+N-3
+0.8713256756554348
+Custom Title 20
+0.833386514581209
+N-4
+0.8321527093125276
+Custom Title 38
+0.49070517313719036
+N-4
+0.49070517313719036
+blueberry apple papaya banana fig
+10
+N-4
+1.0000000000000002
+N-3
+0.9913824033150249
+N-1
+0.9820145511359454
+N-0
+0.9814937989092084
+N-3
+0.9544009281116945
+Custom Title 20
+0.9513863801955661
+Custom Title 38
+0.7071067811865476
+Custom Title 89
+0.7071067811865476
+N-1
+0.7071067811865476
+N-4
+0.7071067811865476
+apricot
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-3
+0.0
+pear banana coconut banana
+10
+Custom Title 20
+0.9673374794777639
+N-4
+0.9411741860802684
+N-3
+0.9389918320967778
+Custom Title 38
+0.9288458191242481
+N-4
+0.8499944986192233
+N-0
+0.7364842091459393
+Custom Title 89
+0.714464322937279
+N-3
+0.6894150443337811
+N-1
+0.6398148981185382
+N-1
+0.0
+apple kiwi peach
+10
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 20
+0.0
+N-3
+0.0
+N-4
+0.0
+pear fig
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+Custom Title 89
+0.0
+N-1
+0.0
+coconut papaya
+10
+Custom Title 89
+1.0
+N-0
+0.9855323165586175
+Custom Title 20
+0.9791752675054497
+N-4
+0.9789201388862714
+Custom Title 38
+0.9042687179431864
+N-4
+0.9042687179431864
+N-3
+0.8809104058614148
+N-1
+0.42696379910876053
+N-1
+0.42696379910876053
+N-3
+0.42696379910876053
+tomato blueberry strawberry tomato apricot
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-3
+0.0
+papaya lime
+10
+Custom Title 20
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 38
+0.0
+N-4
+0.0
+coconut fig apple
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-1
+0.0
+N-3
+0.0
+coconut blueberry pear
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+N-3
+1.0
+N-4
+0.9953259000681424
+N-4
+0.9552517194478515
+Custom Title 89
+0.9042687179431864
+N-0
+0.7881358523701538
+N-1
+0.42696379910876053
+N-3
+0.42696379910876053
+N-1
+0.0
+apricot coconut
+10
+Custom Title 20
+1.0
+Custom Title 89
+1.0
+N-4
+1.0
+N-4
+0.9953259000681424
+Custom Title 38
+0.9769983133107591
+N-0
+0.953678581007338
+N-3
+0.9042687179431864
+N-1
+0.42696379910876053
+N-3
+0.42696379910876053
+N-1
+0.0
+lime papaya tomato
+10
+Custom Title 20
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 38
+0.0
+N-4
+0.0
+peach cherry coconut apricot
+10
+Custom Title 89
+1.0000000000000002
+N-4
+1.0000000000000002
+Custom Title 38
+0.9576274856544376
+N-0
+0.9544741399541253
+Custom Title 20
+0.7417177423162824
+N-3
+0.7417177423162824
+N-4
+0.7382508794674643
+N-1
+0.7194430426550201
+N-1
+0.6707121519200594
+N-3
+0.6707121519200594
+strawberry blueberry coconut
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-1
+0.0
+N-3
+0.0
+pear coconut tomato
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+N-3
+1.0
+N-4
+0.9953259000681424
+N-4
+0.9552517194478515
+Custom Title 89
+0.9042687179431864
+N-0
+0.7881358523701538
+N-1
+0.42696379910876053
+N-3
+0.42696379910876053
+N-1
+0.0
+lime apricot
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-3
+0.0
+apricot blueberry tomato
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-3
+0.0
+strawberry papaya coconut
+10
+Custom Title 89
+1.0
+N-0
+0.9855323165586175
+Custom Title 20
+0.9791752675054497
+N-4
+0.9789201388862714
+Custom Title 38
+0.9042687179431864
+N-4
+0.9042687179431864
+N-3
+0.8809104058614148
+N-1
+0.42696379910876053
+N-1
+0.42696379910876053
+N-3
+0.42696379910876053
+strawberry cherry strawberry apricot
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+N-1
+0.0
+N-3
+0.0
+coconut strawberry banana
+10
+Custom Title 20
+1.0
+N-0
+1.0000000000000002
+N-4
+0.9953259000681424
+Custom Title 38
+0.9911803559177151
+N-4
+0.9789201388862714
+Custom Title 89
+0.9042687179431864
+N-3
+0.8173253954077537
+N-1
+0.42696379910876053
+N-3
+0.42696379910876053
+N-1
+0.0
+peach apricot peach kiwi
+10
+N-1
+0.9982723664503605
+Custom Title 38
+0.992283329070122
+Custom Title 89
+0.9825842384506401
+N-0
+0.9825842384506401
+N-3
+0.9825842384506401
+N-4
+0.9825842384506401
+N-1
+0.9678576169346279
+Custom Title 20
+0.25149877403602416
+N-4
+0.25149877403602416
+N-3
+0.0
+pear
+10
+Custom Title 20
+1.0
+Custom Title 38
+1.0
+N-0
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+N-4
+1.0
+Custom Title 89
+0.0
+N-1
+0.0
+peach kiwi strawberry peach
+10
+Custom Title 38
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 20
+0.0
+N-3
+0.0
+N-4
+0.0
+banana lime coconut apricot strawberry
+10
+Custom Title 20
+1.0000000000000002
+N-4
+0.992893673048705
+N-4
+0.9820199583629539
+Custom Title 38
+0.96728161189017
+N-0
+0.9573025404389092
+Custom Title 89
+0.9196795016567535
+N-3
+0.751677412340012
+N-1
+0.5453313709753537
+N-3
+0.5453313709753537
+N-1
+0.0
+tomato pear banana
+10
+Custom Title 20
+1.0000000000000002
+N-4
+1.0000000000000002
+N-1
+0.9909878651961873
+Custom Title 38
+0.9815962525091808
+N-3
+0.8988175985382486
+N-3
+0.8658647875053789
+N-4
+0.8632215731379168
+N-0
+0.8515377974425193
+Custom Title 89
+0.0
+N-1
+0.0
+peach pear papaya strawberry
+10
+N-1
+0.9731967241419314
+N-4
+0.9335000260503279
+N-0
+0.9333796620719675
+Custom Title 89
+0.9196795016567535
+Custom Title 38
+0.9010078051882532
+N-1
+0.8750159405335841
+N-3
+0.8611219002119873
+Custom Title 20
+0.5283229647047298
+N-3
+0.5001488835222467
+N-4
+0.3926698539898191
+papaya papaya banana blueberry
+10
+N-3
+0.9997825297291056
+N-0
+0.995987695506284
+N-4
+0.9604189019064939
+N-3
+0.9156511462563792
+N-1
+0.890551794903605
+Custom Title 89
+0.8760902046562289
+N-1
+0.8760902046562289
+Custom Title 20
+0.8279330804507934
+Custom Title 38
+0.48214723197941006
+N-4
+0.48214723197941006
+strawberry lime papaya tomato
+10
+Custom Title 20
+1.0
+Custom Title 89
+1.0
+N-0
+1.0
+N-1
+1.0
+N-1
+1.0
+N-3
+1.0
+N-3
+1.0
+N-4
+1.0
+Custom Title 38
+0.0
+N-4
+0.0
+apricot tomato banana papaya
+10
+N-1
+0.9817557404588761
+N-0
+0.9667482099112796
+Custom Title 20
+0.9640835677101838
+N-4
+0.9453033148883943
+N-3
+0.9164934703716902
+Custom Title 89
+0.816496580927726
+N-4
+0.816496580927726
+N-3
+0.8094603426986295
+Custom Title 38
+0.7541786166244435
+N-1
+0.5773502691896257

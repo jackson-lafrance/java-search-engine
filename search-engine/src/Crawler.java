@@ -243,7 +243,12 @@ public class Crawler {
     }
 
     public static void main(String[] args) {
-        String seedUrl = "https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-0.html";
+        String seedUrl;
+        if (args.length > 0) {
+            seedUrl = args[0];
+        } else {
+            seedUrl = "https://people.scs.carleton.ca/~avamckenney/tinyfruitsA/N-0.html";
+        }
         System.out.println("Crawling from " + seedUrl + "...");
 
         Crawler crawler = new Crawler();
