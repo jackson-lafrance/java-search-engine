@@ -1,6 +1,5 @@
 
 import java.io.*;
-import java.nio.file.*;
 import java.util.*;
 
 // web crawler that traverses web pages starting from a seed URL
@@ -53,7 +52,6 @@ public class Crawler {
         toVisitSet.add(seed);
 
         int queueIndex = 0;
-        int fileCounter = 0;
 
         while (queueIndex < toVisit.size()) {
             String url = toVisit.get(queueIndex);
@@ -69,7 +67,6 @@ public class Crawler {
 
             try {
                 String content = WebRequester.readURL(url);
-                savePageContent(content, fileCounter++);
 
                 titles.put(url, htmlParser.extractTitle(content));
                 List<String> links = htmlParser.extractLinks(content, url);
@@ -109,12 +106,6 @@ public class Crawler {
             filtered.put(page, validLinks);
         }
         return filtered;
-    }
-
-    // saves the html content of a page to a file
-    private void savePageContent(String content, int fileCounter) throws IOException {
-        String fileName = resultsDirectory + File.separator + "page" + fileCounter + ".txt";
-        Files.write(Paths.get(fileName), content.getBytes());
     }
 
     // calculates tfidf scores from word lists
