@@ -1,0 +1,42 @@
+<html><head><title>Custom Title 76</title></head><body>
+<a class="link-class-2" style="color:red" target="_blank" href="https://people.scs.carleton.ca/~avamckenney/fruits25/N-17.html" title="Go to page N-17" id="link-17">17</a>
+<p>
+pear
+papaya
+lime
+fig
+peach
+apricot
+strawberry
+lime
+fig
+fig
+apricot
+fig
+blueberry
+papaya
+cherry
+banana
+fig
+blueberry
+lime
+cherry
+papaya
+cherry
+lime
+coconut
+pear
+papaya
+kiwi
+apricot
+banana
+</p>
+<a style="color:red" id="link-20" title="Go to page N-20" target="_blank" class="link-class-3" href="./N-20.html">20</a>
+<a style="color:red" target="_blank" title="Go to page N-2" class="link-class-5" id="link-2" href="https://people.scs.carleton.ca/~avamckenney/fruits25/N-2.html">2</a>
+<a title="Go to page N-19" target="_blank" style="color:red" class="link-class-5" id="link-19" href="https://people.scs.carleton.ca/~avamckenney/fruits25/N-19.html">19</a>
+<a id="link-24" style="color:red" class="link-class-3" title="Go to page N-24" href="./N-24.html" target="_blank">24</a>
+<a href="./N-12.html" target="_blank" class="link-class-3" title="Go to page N-12" style="color:red" id="link-12">12</a>
+<a class="link-class-1" id="link-10" href="./N-10.html" target="_blank" style="color:red" title="Go to page N-10">10</a>
+<a id="link-8" href="./N-8.html" target="_blank" style="color:red" class="link-class-5" title="Go to page N-8">8</a>
+<a style="color:red" class="link-class-2" target="_blank" id="link-11" href="https://people.scs.carleton.ca/~avamckenney/fruits25/N-11.html" title="Go to page N-11">11</a>
+</body></html>
