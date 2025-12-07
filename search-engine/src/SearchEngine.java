@@ -1,6 +1,7 @@
 
 import java.util.*;
 
+// search engine that performs searches on crawled data
 public class SearchEngine {
 
     private final SearchData searchData;
@@ -9,17 +10,27 @@ public class SearchEngine {
         this.searchData = searchData;
     }
 
-// performs a search using the query you input
+    // performs a search using the given query
     public List<SearchResult> search(String query, boolean boost, int X) {
         List<String> words = parseQuery(query);
-        if (words.isEmpty()) {
-            return new ArrayList<>();
-        }
 
 // gets all urls
         List<String> allUrls = searchData.getAllUrls();
         if (allUrls.isEmpty()) {
             return new ArrayList<>();
+        }
+
+        // if query has no valid words, return all results with score 0 sorted lexicographically
+        if (words.isEmpty()) {
+            Map<String, String> urlToTitle = searchData.getAllTitles();
+            List<SearchResult> zeroScoreResults = new ArrayList<>();
+            for (String url : allUrls) {
+                String title = urlToTitle.getOrDefault(url, "");
+                zeroScoreResults.add(new SearchResult(title, 0.0));
+            }
+            zeroScoreResults.sort((r1, r2) -> r1.getTitle().compareTo(r2.getTitle()));
+            int numResults = Math.min(X, zeroScoreResults.size());
+            return numResults > 0 ? new ArrayList<>(zeroScoreResults.subList(0, numResults)) : new ArrayList<>();
         }
 
 // gets all required data
@@ -124,7 +135,7 @@ public class SearchEngine {
         return new ArrayList<>(results.subList(0, numResults));
     }
 
-// parses the query into a list of words
+    // parses the query into a list of words
     private List<String> parseQuery(String query) {
         List<String> words = new ArrayList<>();
         String queryLower = query.toLowerCase();

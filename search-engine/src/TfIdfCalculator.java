@@ -1,9 +1,10 @@
 
 import java.util.*;
 
+// calculates TF-IDF scores
 public class TfIdfCalculator {
 
-// calculates term frequency for all words across all documents
+    // calculates term frequency for all words across all documents
     public Map<String, Map<String, Double>> calculateTf(Map<String, List<String>> wordLists) {
         Map<String, Map<String, Double>> tf = new HashMap<>();
 
@@ -29,7 +30,7 @@ public class TfIdfCalculator {
         return tf;
     }
 
-// calculates inverse document frequency for all words
+    // calculates inverse document frequency for all words
     public Map<String, Double> calculateIdf(Map<String, Map<String, Double>> tf, int totalDocuments) {
         Map<String, Double> idf = new HashMap<>();
 
@@ -46,7 +47,7 @@ public class TfIdfCalculator {
         return idf;
     }
 
-// calculates tfidf scores for all words across all documents
+    // calculates tfidf scores for all words across all documents
     public Map<String, Map<String, Double>> calculateTfIdf(Map<String, Map<String, Double>> tf,
             Map<String, Double> idf) {
         Map<String, Map<String, Double>> tfidf = new HashMap<>();
@@ -67,7 +68,7 @@ public class TfIdfCalculator {
         return tfidf;
     }
 
-// counts the words
+    // counts the words
     private Map<String, Integer> countWords(List<String> words) {
         Map<String, Integer> wordCounts = new HashMap<>();
         for (String word : words) {

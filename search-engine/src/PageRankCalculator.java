@@ -1,9 +1,10 @@
 
 import java.util.*;
 
+// calculates PageRank values for web pages
 public class PageRankCalculator {
 
-// computes page rank for all pages in the link graph
+    // computes page rank for all pages in the link graph
     public Map<String, Double> computePageRank(Map<String, List<String>> linkGraph) {
         List<String> pages = new ArrayList<>(linkGraph.keySet());
         int numPages = pages.size();
@@ -28,7 +29,7 @@ public class PageRankCalculator {
         return result;
     }
 
-// computes page rank using visited set
+    // computes page rank using visited set (overloaded method)
     public Map<String, Double> computePageRank(Map<String, List<String>> linkGraph, Set<String> visited) {
         List<String> pages = new ArrayList<>(linkGraph.keySet());
         int numPages = pages.size();
@@ -54,7 +55,7 @@ public class PageRankCalculator {
         return result;
     }
 
-// initializes the ranks
+    // initializes the ranks uniformly
     private Map<String, Double> initializeRanks(List<String> pages, int numPages) {
         Map<String, Double> ranks = new LinkedHashMap<>();
         for (String page : pages) {
@@ -63,7 +64,7 @@ public class PageRankCalculator {
         return ranks;
     }
 
-// computes the new ranks
+    // computes the new ranks based on current ranks
     private Map<String, Double> computeNewRanks(List<String> pages,
             Map<String, List<String>> linkGraph,
             Map<String, Double> ranks,
@@ -108,7 +109,7 @@ public class PageRankCalculator {
         return newRanks;
     }
 
-// calculates the euclidean distance
+    // calculates the euclidean distance between old and new ranks
     private double calculateEuclideanDistance(Map<String, Double> oldRanks,
             Map<String, Double> newRanks,
             List<String> pages) {

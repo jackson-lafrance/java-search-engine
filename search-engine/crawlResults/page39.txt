@@ -1,103 +1,57 @@
-<html><head><title>N-32</title></head><body>
-<a target="_blank" title="Go to page N-35" id="link-35" style="color:red" class="link-class-4" href="./N-35.html">35</a>
-<a style="color:red" class="link-class-4" id="link-9" target="_blank" href="https://people.scs.carleton.ca/~avamckenney/fruitsA/N-9.html" title="Go to page N-9">9</a>
-<a id="link-17" href="./N-17.html" class="link-class-4" title="Go to page N-17" target="_blank" style="color:red">17</a>
+<html><head><title>N-37</title></head><body>
+<a id="link-12" class="link-class-1" href="./N-12.html" target="_blank" title="Go to page N-12" style="color:red">12</a>
+<a class="link-class-3" id="link-2" target="_blank" title="Go to page N-2" href="https://people.scs.carleton.ca/~avamckenney/fruits100/N-2.html" style="color:red">2</a>
+<a style="color:red" class="link-class-2" target="_blank" title="Go to page N-59" href="./N-59.html" id="link-59">59</a>
+<a style="color:red" id="link-47" title="Go to page N-47" class="link-class-3" href="./N-47.html" target="_blank">47</a>
+<a class="link-class-2" style="color:red" target="_blank" href="./N-83.html" id="link-83" title="Go to page N-83">83</a>
+<a id="link-60" href="./N-60.html" class="link-class-1" title="Go to page N-60" style="color:red" target="_blank">60</a>
+<a class="link-class-1" href="./N-63.html" target="_blank" id="link-63" style="color:red" title="Go to page N-63">63</a>
+<a id="link-87" class="link-class-5" target="_blank" href="./N-87.html" title="Go to page N-87" style="color:red">87</a>
+<a title="Go to page N-31" style="color:red" class="link-class-3" href="./N-31.html" id="link-31" target="_blank">31</a>
+<a target="_blank" href="./N-50.html" title="Go to page N-50" id="link-50" class="link-class-4" style="color:red">50</a>
+<a title="Go to page N-81" id="link-81" style="color:red" class="link-class-4" href="./N-81.html" target="_blank">81</a>
+<a id="link-45" class="link-class-3" style="color:red" title="Go to page N-45" target="_blank" href="./N-45.html">45</a>
+<a id="link-79" href="https://people.scs.carleton.ca/~avamckenney/fruits100/N-79.html" target="_blank" style="color:red" title="Go to page N-79" class="link-class-3">79</a>
+<a class="link-class-4" target="_blank" href="./N-6.html" style="color:red" title="Go to page N-6" id="link-6">6</a>
+<a href="https://people.scs.carleton.ca/~avamckenney/fruits100/N-36.html" style="color:red" title="Go to page N-36" id="link-36" target="_blank" class="link-class-1">36</a>
+<a target="_blank" href="./N-58.html" style="color:red" title="Go to page N-58" class="link-class-1" id="link-58">58</a>
+<a class="link-class-5" style="color:red" href="./N-99.html" target="_blank" title="Go to page N-99" id="link-99">99</a>
+<a style="color:red" target="_blank" class="link-class-4" href="./N-94.html" id="link-94" title="Go to page N-94">94</a>
+<a style="color:red" target="_blank" id="link-27" href="https://people.scs.carleton.ca/~avamckenney/fruits100/N-27.html" class="link-class-3" title="Go to page N-27">27</a>
 <p>
-lime
-fig
-kiwi
-peach
-apricot
-lime
-lime
-papaya
 banana
-peach
-peach
-pear
-fig
-strawberry
-papaya
-pear
-coconut
-papaya
-apple
 apricot
-lime
-apple
-papaya
-papaya
-coconut
-peach
-peach
-cherry
-cherry
-</p>
-<a id="link-19" class="link-class-5" style="color:red" href="./N-19.html" title="Go to page N-19" target="_blank">19</a>
-<p>
-fig
-cherry
-cherry
-papaya
-coconut
-fig
+strawberry
+kiwi
 blueberry
-cherry
+apricot
+pear
 coconut
 strawberry
-coconut
-papaya
-cherry
-pear
+fig
+apricot
+fig
+apple
 strawberry
-lime
-blueberry
-lime
-apple
-apricot
-lime
-cherry
-pear
-lime
-fig
-</p>
-<a style="color:red" href="./N-28.html" class="link-class-4" title="Go to page N-28" target="_blank" id="link-28">28</a>
-<a title="Go to page N-37" class="link-class-5" href="https://people.scs.carleton.ca/~avamckenney/fruitsA/N-37.html" style="color:red" target="_blank" id="link-37">37</a>
-<a target="_blank" title="Go to page N-33" href="./N-33.html" id="link-33" style="color:red" class="link-class-3">33</a>
-<a id="link-31" title="Go to page N-31" class="link-class-2" target="_blank" href="https://people.scs.carleton.ca/~avamckenney/fruitsA/N-31.html" style="color:red">31</a>
-<p>
-kiwi
-kiwi
-cherry
-kiwi
-lime
-papaya
-apricot
-fig
-apricot
-papaya
-kiwi
-apple
-apricot
-kiwi
-kiwi
-lime
-peach
 banana
-cherry
-lime
-fig
-blueberry
-blueberry
+kiwi
 </p>
-<a href="./N-34.html" id="link-34" title="Go to page N-34" target="_blank" class="link-class-3" style="color:red">34</a>
-<a id="link-29" style="color:red" target="_blank" href="./N-29.html" class="link-class-3" title="Go to page N-29">29</a>
-<a id="link-49" title="Go to page N-49" href="./N-49.html" target="_blank" class="link-class-2" style="color:red">49</a>
-<a style="color:red" class="link-class-1" target="_blank" href="./N-38.html" id="link-38" title="Go to page N-38">38</a>
-<a id="link-4" href="./N-4.html" title="Go to page N-4" style="color:red" target="_blank" class="link-class-3">4</a>
-<a style="color:red" class="link-class-4" id="link-3" target="_blank" href="./N-3.html" title="Go to page N-3">3</a>
-<a title="Go to page N-40" class="link-class-1" style="color:red" id="link-40" target="_blank" href="https://people.scs.carleton.ca/~avamckenney/fruitsA/N-40.html">40</a>
-<a target="_blank" class="link-class-5" title="Go to page N-42" style="color:red" href="./N-42.html" id="link-42">42</a>
-<a class="link-class-2" style="color:red" href="./N-24.html" target="_blank" title="Go to page N-24" id="link-24">24</a>
-<a style="color:red" class="link-class-1" id="link-45" title="Go to page N-45" target="_blank" href="https://people.scs.carleton.ca/~avamckenney/fruitsA/N-45.html">45</a>
+<a href="./N-71.html" class="link-class-5" id="link-71" title="Go to page N-71" target="_blank" style="color:red">71</a>
+<a href="./N-64.html" target="_blank" title="Go to page N-64" id="link-64" class="link-class-2" style="color:red">64</a>
+<a id="link-78" title="Go to page N-78" style="color:red" href="https://people.scs.carleton.ca/~avamckenney/fruits100/N-78.html" class="link-class-2" target="_blank">78</a>
+<a class="link-class-2" id="link-54" title="Go to page N-54" href="https://people.scs.carleton.ca/~avamckenney/fruits100/N-54.html" target="_blank" style="color:red">54</a>
+<a href="./N-8.html" title="Go to page N-8" style="color:red" id="link-8" class="link-class-3" target="_blank">8</a>
+<a class="link-class-2" style="color:red" title="Go to page N-39" target="_blank" id="link-39" href="./N-39.html">39</a>
+<a class="link-class-1" title="Go to page N-4" style="color:red" target="_blank" id="link-4" href="https://people.scs.carleton.ca/~avamckenney/fruits100/N-4.html">4</a>
+<a class="link-class-3" id="link-44" title="Go to page N-44" target="_blank" href="https://people.scs.carleton.ca/~avamckenney/fruits100/N-44.html" style="color:red">44</a>
+<a target="_blank" class="link-class-1" id="link-34" href="./N-34.html" title="Go to page N-34" style="color:red">34</a>
+<a style="color:red" id="link-67" title="Go to page N-67" class="link-class-3" target="_blank" href="https://people.scs.carleton.ca/~avamckenney/fruits100/N-67.html">67</a>
+<a class="link-class-3" target="_blank" href="./N-96.html" id="link-96" style="color:red" title="Go to page N-96">96</a>
+<a title="Go to page N-7" target="_blank" class="link-class-4" href="./N-7.html" style="color:red" id="link-7">7</a>
+<a style="color:red" id="link-48" target="_blank" class="link-class-5" title="Go to page N-48" href="./N-48.html">48</a>
+<a class="link-class-2" style="color:red" target="_blank" title="Go to page N-5" id="link-5" href="https://people.scs.carleton.ca/~avamckenney/fruits100/N-5.html">5</a>
+<a title="Go to page N-73" style="color:red" href="./N-73.html" class="link-class-3" target="_blank" id="link-73">73</a>
+<a target="_blank" title="Go to page N-97" class="link-class-3" href="./N-97.html" id="link-97" style="color:red">97</a>
+<a target="_blank" title="Go to page N-66" style="color:red" id="link-66" href="./N-66.html" class="link-class-3">66</a>
+<a id="link-15" target="_blank" style="color:red" title="Go to page N-15" href="./N-15.html" class="link-class-3">15</a>
 </body></html>

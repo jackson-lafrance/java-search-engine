@@ -13,21 +13,21 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import java.util.List;
 
-public class GUI extends Pane {
+// GUI view component implementing MVC pattern
+public class GUI extends Pane implements SearchView {
 
-    private static final String RESULTS_DIRECTORY = "crawlResults";
-    private final SearchData searchData;
-    private final SearchEngine searchEngine;
+    private SearchController controller;
     private TextField searchField;
     private RadioButton boostButton;
     private RadioButton noBoostButton;
     private ListView<String> resultsList;
 
     public GUI() {
-        // Initialize search components
-        this.searchData = new SearchData(RESULTS_DIRECTORY);
-        this.searchEngine = new SearchEngine(searchData);
+        initializeUI();
+    }
 
+    // initializes all UI components
+    private void initializeUI() {
         Label titleLabel = new Label("Yehoo?");
         titleLabel.setFont(Font.font("Arial", FontWeight.BOLD, 24));
         titleLabel.setTextFill(Color.web("#7B0099"));
@@ -41,7 +41,7 @@ public class GUI extends Pane {
         Button searchButton = new Button("Search");
         searchButton.setPrefWidth(100);
         searchButton.relocate(530, 50);
-        searchButton.setOnAction(e -> performSearch());
+        searchButton.setOnAction(e -> handleSearchButtonClick());
 
         Label boostLabel = new Label("PageRank Boost:");
         boostLabel.relocate(20, 90);
@@ -51,12 +51,12 @@ public class GUI extends Pane {
         noBoostButton.setToggleGroup(boostGroup);
         noBoostButton.setSelected(true);
         noBoostButton.relocate(150, 90);
-        noBoostButton.setOnAction(e -> performSearch());
+        noBoostButton.setOnAction(e -> handleBoostChange());
 
         boostButton = new RadioButton("On");
         boostButton.setToggleGroup(boostGroup);
         boostButton.relocate(200, 90);
-        boostButton.setOnAction(e -> performSearch());
+        boostButton.setOnAction(e -> handleBoostChange());
 
         Label resultsLabel = new Label("Top 10 Results:");
         resultsLabel.setFont(Font.font("Arial", FontWeight.BOLD, 14));
@@ -71,23 +71,42 @@ public class GUI extends Pane {
                 noBoostButton, boostButton, resultsLabel, resultsList);
     }
 
-// performs a search and updates the results list
-    private void performSearch() {
-        String query = searchField.getText().trim();
-        if (query.isEmpty()) {
-            resultsList.setItems(FXCollections.observableArrayList());
+    // handles search button click event
+    private void handleSearchButtonClick() {
+        if (controller != null) {
+            String query = searchField.getText();
+            boolean boost = boostButton.isSelected();
+            controller.handleSearch(query, boost, 10);
+        }
+    }
+
+    // handles boost option change event
+    private void handleBoostChange() {
+        handleSearchButtonClick();
+    }
+
+    // gets the root pane for this view
+    public Pane getRootPane() {
+        return this;
+    }
+
+    // displays search results in the UI
+    public void displayResults(List<SearchResult> results) {
+        if (resultsList == null) {
             return;
         }
-
-        boolean boost = boostButton.isSelected();
-        List<SearchResult> results = searchEngine.search(query, boost, 10);
-
         ObservableList<String> resultStrings = FXCollections.observableArrayList();
-        for (SearchResult result : results) {
-            String displayText = String.format("%s (Score: %.4f)", result.getTitle(), result.getScore());
-            resultStrings.add(displayText);
+        if (results != null) {
+            for (SearchResult result : results) {
+                String displayText = String.format("%s (Score: %.4f)", result.getTitle(), result.getScore());
+                resultStrings.add(displayText);
+            }
         }
-
         resultsList.setItems(resultStrings);
     }
-};
+
+    // sets the controller for handling user interactions
+    public void setController(SearchController controller) {
+        this.controller = controller;
+    }
+}

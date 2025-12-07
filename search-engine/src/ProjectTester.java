@@ -1,6 +1,8 @@
+
 import java.util.List;
 
 public interface ProjectTester {
+
     /*
     This method must delete any existing data that has been stored from any previous crawl.
     This method should also perform any other initialization needed by your system.

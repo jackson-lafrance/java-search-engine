@@ -3,12 +3,13 @@ import java.io.*;
 import java.nio.file.*;
 import java.util.*;
 
+// web crawler that traverses web pages starting from a seed URL
 public class Crawler {
 
-    private final HtmlParser htmlParser;
+    private final HtmlContentParser htmlParser;
     private final PageRankCalculator pageRankCalculator;
     private final TfIdfCalculator tfIdfCalculator;
-    private final DataSerializer dataSerializer;
+    private final DataStorage dataStorage;
     private final String resultsDirectory;
 
     public Crawler() {
@@ -20,12 +21,12 @@ public class Crawler {
         this.htmlParser = new HtmlParser();
         this.pageRankCalculator = new PageRankCalculator();
         this.tfIdfCalculator = new TfIdfCalculator();
-        this.dataSerializer = new DataSerializer(resultsDirectory);
+        this.dataStorage = new FileDataStorage(resultsDirectory);
     }
 
-// crawls the web starting from the seed url
+    // crawls the web starting from the seed URL
     public int crawl(String seed) {
-        dataSerializer.clearDirectory();
+        dataStorage.clearStorage();
 
         CrawlData crawlData = performCrawl(seed);
         Map<String, List<String>> filteredLinkGraph = filterLinkGraph(crawlData.getLinkGraph(), crawlData.getVisited());
@@ -38,7 +39,7 @@ public class Crawler {
         return crawlData.getVisited().size();
     }
 
-// performs the actual web crawling using bfs
+    // performs the actual web crawling using BFS algorithm
     private CrawlData performCrawl(String seed) {
         Set<String> visited = new LinkedHashSet<>(); // Preserve insertion order (like Python)
         Map<String, List<String>> linkGraph = new LinkedHashMap<>(); // Preserve insertion order (like Python dict)
@@ -94,7 +95,7 @@ public class Crawler {
         return new CrawlData(visited, linkGraph, incomingLinks, wordLists, titles);
     }
 
-// filters link graph to only include links to visited pages (like Python does)
+    // filters link graph to only include links to visited pages
     private Map<String, List<String>> filterLinkGraph(Map<String, List<String>> linkGraph, Set<String> visited) {
         Map<String, List<String>> filtered = new LinkedHashMap<>();
         for (String page : linkGraph.keySet()) {
@@ -110,13 +111,13 @@ public class Crawler {
         return filtered;
     }
 
-// saves the html content of a page to a file
+    // saves the html content of a page to a file
     private void savePageContent(String content, int fileCounter) throws IOException {
         String fileName = resultsDirectory + File.separator + "page" + fileCounter + ".txt";
         Files.write(Paths.get(fileName), content.getBytes());
     }
 
-// calculates tfidf scores from word lists
+    // calculates tfidf scores from word lists
     private TfIdfData calculateTfIdf(Map<String, List<String>> wordLists) {
         int totalDocuments = wordLists.size();
         Map<String, Map<String, Double>> tf = tfIdfCalculator.calculateTf(wordLists);
@@ -126,22 +127,22 @@ public class Crawler {
         return new TfIdfData(tf, idf, tfidf);
     }
 
-// saves all crawl results to serialized file guys
+    // saves all crawl results to serialized files
     private void saveCrawlResults(CrawlData crawlData, Map<String, Double> pageRanks, TfIdfData tfIdfData) {
         try {
-            dataSerializer.writeObject(tfIdfData.getTf(), "tf.ser");
-            dataSerializer.writeObject(tfIdfData.getIdf(), "idf.ser");
-            dataSerializer.writeObject(tfIdfData.getTfidf(), "tfidf.ser");
-            dataSerializer.writeObject(pageRanks, "pageRank.ser");
-            dataSerializer.writeObject(crawlData.getLinkGraph(), "links.ser");
-            dataSerializer.writeObject(crawlData.getIncomingLinks(), "linksi.ser");
-            dataSerializer.writeObject(crawlData.getTitles(), "titles.ser");
+            dataStorage.writeObject(tfIdfData.getTf(), "tf.ser");
+            dataStorage.writeObject(tfIdfData.getIdf(), "idf.ser");
+            dataStorage.writeObject(tfIdfData.getTfidf(), "tfidf.ser");
+            dataStorage.writeObject(pageRanks, "pageRank.ser");
+            dataStorage.writeObject(crawlData.getLinkGraph(), "links.ser");
+            dataStorage.writeObject(crawlData.getIncomingLinks(), "linksi.ser");
+            dataStorage.writeObject(crawlData.getTitles(), "titles.ser");
         } catch (IOException e) {
             System.err.println("Error writing serialized files: " + e.getMessage());
         }
     }
 
-// inner class to hold crawl data
+    // inner class to hold crawl data - demonstrates encapsulation and composition
     private static class CrawlData {
 
         private final Set<String> visited;
@@ -155,35 +156,47 @@ public class Crawler {
                 Map<String, List<String>> incomingLinks,
                 Map<String, List<String>> wordLists,
                 Map<String, String> titles) {
-            this.visited = visited;
-            this.linkGraph = linkGraph;
-            this.incomingLinks = incomingLinks;
-            this.wordLists = wordLists;
-            this.titles = titles;
+            this.visited = new LinkedHashSet<>(visited);
+            this.linkGraph = new LinkedHashMap<>(linkGraph);
+            this.incomingLinks = new HashMap<>(incomingLinks);
+            this.wordLists = new HashMap<>(wordLists);
+            this.titles = new HashMap<>(titles);
         }
 
         public Set<String> getVisited() {
-            return visited;
+            return new LinkedHashSet<>(visited);
         }
 
         public Map<String, List<String>> getLinkGraph() {
-            return linkGraph;
+            Map<String, List<String>> copy = new LinkedHashMap<>();
+            for (Map.Entry<String, List<String>> entry : linkGraph.entrySet()) {
+                copy.put(entry.getKey(), new ArrayList<>(entry.getValue()));
+            }
+            return copy;
         }
 
         public Map<String, List<String>> getIncomingLinks() {
-            return incomingLinks;
+            Map<String, List<String>> copy = new HashMap<>();
+            for (Map.Entry<String, List<String>> entry : incomingLinks.entrySet()) {
+                copy.put(entry.getKey(), new ArrayList<>(entry.getValue()));
+            }
+            return copy;
         }
 
         public Map<String, List<String>> getWordLists() {
-            return wordLists;
+            Map<String, List<String>> copy = new HashMap<>();
+            for (Map.Entry<String, List<String>> entry : wordLists.entrySet()) {
+                copy.put(entry.getKey(), new ArrayList<>(entry.getValue()));
+            }
+            return copy;
         }
 
         public Map<String, String> getTitles() {
-            return titles;
+            return new HashMap<>(titles);
         }
     }
 
-// inner class to hold tfidf calculation results
+    // inner class to hold tfidf calculation results
     private static class TfIdfData {
 
         private final Map<String, Map<String, Double>> tf;
@@ -193,21 +206,39 @@ public class Crawler {
         public TfIdfData(Map<String, Map<String, Double>> tf,
                 Map<String, Double> idf,
                 Map<String, Map<String, Double>> tfidf) {
-            this.tf = tf;
-            this.idf = idf;
-            this.tfidf = tfidf;
+            this.tf = deepCopyTf(tf);
+            this.idf = new HashMap<>(idf);
+            this.tfidf = deepCopyTfidf(tfidf);
+        }
+
+        // deep copies the TF map to prevent external modification
+        private Map<String, Map<String, Double>> deepCopyTf(Map<String, Map<String, Double>> original) {
+            Map<String, Map<String, Double>> copy = new HashMap<>();
+            for (Map.Entry<String, Map<String, Double>> entry : original.entrySet()) {
+                copy.put(entry.getKey(), new HashMap<>(entry.getValue()));
+            }
+            return copy;
+        }
+
+        // deep copies the TF-IDF map to prevent external modification
+        private Map<String, Map<String, Double>> deepCopyTfidf(Map<String, Map<String, Double>> original) {
+            Map<String, Map<String, Double>> copy = new HashMap<>();
+            for (Map.Entry<String, Map<String, Double>> entry : original.entrySet()) {
+                copy.put(entry.getKey(), new HashMap<>(entry.getValue()));
+            }
+            return copy;
         }
 
         public Map<String, Map<String, Double>> getTf() {
-            return tf;
+            return deepCopyTf(tf);
         }
 
         public Map<String, Double> getIdf() {
-            return idf;
+            return new HashMap<>(idf);
         }
 
         public Map<String, Map<String, Double>> getTfidf() {
-            return tfidf;
+            return deepCopyTfidf(tfidf);
         }
     }
 
