@@ -2,16 +2,54 @@
 
 ## 1. Instructions for Running the GUI and Tests
 
+### Initial Setup (Starting from .java files only)
+
+**Prerequisites**: You need JavaFX libraries. Download JavaFX SDK and extract it, or use the provided `lib/` folder if available.
+
+1. **Create project structure**: Set up the following directory structure:
+   ```
+   your-project/
+   ├── src/
+   │   └── (all your .java files go here)
+   ├── lib/
+   │   └── (JavaFX .jar files go here)
+   └── bin/
+       └── (compiled .class files will go here)
+   ```
+
+2. **Add JavaFX libraries**: Copy all JavaFX `.jar` files into the `lib/` directory. You need at minimum:
+   - `javafx.base.jar`
+   - `javafx.controls.jar`
+   - `javafx.graphics.jar`
+   - `javafx.fxml.jar` (if using FXML)
+   - Other JavaFX modules as needed
+   
+   **Where to get JavaFX**: Download from https://openjfx.io/ or use the JavaFX libraries provided with your course materials.
+
+3. **Copy .java files**: Copy all `.java` files into the `src/` directory.
+
+**Note**: The `bin/` directory will be created automatically when you compile the project - you don't need to create it manually.
+
 ### Running the GUI Application
 
-1. **Compile the project**: Ensure all Java files are compiled with JavaFX on the classpath:
+1. **Compile the project**: Compile all Java files with JavaFX on the classpath:
    ```bash
    javac -cp "lib/*:src" -d bin src/*.java
+   ```
+   
+   **Note**: On Windows, use semicolons instead of colons:
+   ```bash
+   javac -cp "lib/*;src" -d bin src/*.java
    ```
 
 2. **Run the application**: Execute the `App` class:
    ```bash
    java -cp "lib/*:bin" App
+   ```
+   
+   **Note**: On Windows:
+   ```bash
+   java -cp "lib/*;bin" App
    ```
 
 3. **Before searching**: You must first crawl a website to generate search data. This can be done either:
@@ -25,7 +63,7 @@
    
    Simply copy and paste any seed URL after the `Crawler` command. If no URL is provided, it defaults to `tinyfruitsA`.
    
-   **Example commands**:
+   **Example commands** (Linux/Mac):
    ```bash
    # Crawl tiny dataset (10 pages)
    java -cp "lib/*:bin" Crawler "https://people.scs.carleton.ca/~avamckenney/tinyfruits/N-0.html"
@@ -41,6 +79,24 @@
    
    # Crawl larger dataset
    java -cp "lib/*:bin" Crawler "https://people.scs.carleton.ca/~avamckenney/fruitsA/N-0.html"
+   ```
+   
+   **Example commands** (Windows):
+   ```bash
+   # Crawl tiny dataset (10 pages)
+   java -cp "lib/*;bin" Crawler "https://people.scs.carleton.ca/~avamckenney/tinyfruits/N-0.html"
+   
+   # Crawl 25-page dataset
+   java -cp "lib/*;bin" Crawler "https://people.scs.carleton.ca/~avamckenney/fruits25/N-0.html"
+   
+   # Crawl 50-page dataset
+   java -cp "lib/*;bin" Crawler "https://people.scs.carleton.ca/~avamckenney/fruits50/N-0.html"
+   
+   # Crawl 100-page dataset
+   java -cp "lib/*;bin" Crawler "https://people.scs.carleton.ca/~avamckenney/fruits100/N-0.html"
+   
+   # Crawl larger dataset
+   java -cp "lib/*;bin" Crawler "https://people.scs.carleton.ca/~avamckenney/fruitsA/N-0.html"
    ```
    
    After crawling completes, the data will be saved in the `crawlResults/` directory and you can use the GUI to search.
@@ -61,11 +117,21 @@ To run the provided test suite:
    ```
 
 4. **Run individual tests**: Run each test file from the project root directory. For example:
+   
+   **Linux/Mac**:
    ```bash
    java -cp "lib/*:bin" TinyFruitsATFTester
    java -cp "lib/*:bin" Fruits25SearchBoostTester
    java -cp "lib/*:bin" Fruits50PageRanksTester
    ```
+   
+   **Windows**:
+   ```bash
+   java -cp "lib/*;bin" TinyFruitsATFTester
+   java -cp "lib/*;bin" Fruits25SearchBoostTester
+   java -cp "lib/*;bin" Fruits50PageRanksTester
+   ```
+   
    (Replace with the actual test class names you want to run)
 
 5. **Check results**: After running each test, check the generated output files:

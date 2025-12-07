@@ -26,7 +26,7 @@ public class SearchEngine {
             List<SearchResult> zeroScoreResults = new ArrayList<>();
             for (String url : allUrls) {
                 String title = urlToTitle.getOrDefault(url, "");
-                zeroScoreResults.add(new SearchResult(title, 0.0));
+                zeroScoreResults.add(new SearchResultImp(title, 0.0));
             }
             zeroScoreResults.sort((r1, r2) -> r1.getTitle().compareTo(r2.getTitle()));
             int numResults = Math.min(X, zeroScoreResults.size());
@@ -72,7 +72,7 @@ public class SearchEngine {
             List<SearchResult> zeroScoreResults = new ArrayList<>();
             for (String url : allUrls) {
                 String title = urlToTitle.getOrDefault(url, "");
-                zeroScoreResults.add(new SearchResult(title, 0.0));
+                zeroScoreResults.add(new SearchResultImp(title, 0.0));
             }
             zeroScoreResults.sort((r1, r2) -> r1.getTitle().compareTo(r2.getTitle()));
             int numResults = Math.min(X, zeroScoreResults.size());
@@ -110,7 +110,7 @@ public class SearchEngine {
             }
 
             String title = urlToTitle.getOrDefault(url, "");
-            results.add(new SearchResult(title, score));
+            results.add(new SearchResultImp(title, score));
         }
 
 // sorts the results by score then by title
