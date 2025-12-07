@@ -19,7 +19,6 @@ public class DataSerializer {
     }
 
     // reads an object from a file
-    @SuppressWarnings("unchecked")
     public <T> T readObject(String filename) throws IOException, ClassNotFoundException {
         File file = new File(baseDirectory, filename);
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))) {

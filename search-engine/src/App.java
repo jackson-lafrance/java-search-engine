@@ -3,7 +3,7 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 
-// main application class that sets up the MVC architecture
+// main application class that sets up the model view controller architecture
 public class App extends Application {
 
     private static final String RESULTS_DIRECTORY = "crawlResults";

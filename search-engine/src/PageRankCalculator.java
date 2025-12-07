@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-// calculates PageRank values for web pages
+// calculates PageRank values
 public class PageRankCalculator {
 
     // computes page rank for all pages in the link graph
